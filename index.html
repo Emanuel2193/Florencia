@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ff6b81">
+
+<title>Para vos</title>
+
+<link rel="stylesheet" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="stars"></div>
+<div class="petals"></div>
+<div class="sparkles"></div>
+
+<!-- reproductor musica -->
+
+<audio id="music" preload="auto" loop>
+<source src="music/La Konga - PERFECTA.mp3" type="audio/mpeg">
+</audio>
+
+<!-- nombre de la canción -->
+
+<div id="songName">
+🎵 La Konga - PERFECTA
+</div>
+
+<!-- SOBRE -->
+
+<div class="envelope-container" id="envelopeContainer">
+
+<div class="envelope" onclick="openEnvelope()">
+
+<div class="flap"></div>
+
+<div class="letter-text">
+Para vos 💌
+</div>
+
+</div>
+
+<p class="openText">Tocá la carta</p>
+
+</div>
+
+<!-- HISTORIA -->
+
+<div class="story" id="story" style="display:none;">
+
+<div class="progress">
+
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
+
+<div class="page active">
+
+<h1>Hola</h1>
+
+<p>Hice esto porque quería decirte algo de una forma distinta.</p>
+
+<button onclick="nextPage()">Seguir</button>
+
+</div>
+
+<div class="page">
+
+<h1>Algo que descubrí</h1>
+
+<p>Desde que hablamos más seguido...</p>
+<p>mis días se sienten un poco más lindos.</p>
+
+<button onclick="nextPage()">Seguir</button>
+
+</div>
+
+<div class="page">
+
+<h1>Una pequeña verdad</h1>
+
+<p>Tenés una forma de ser que transmite tranquilidad.</p>
+
+<button onclick="nextPage()">Seguir</button>
+
+</div>
+
+<div class="page">
+
+<h1>Confesión</h1>
+
+<p>A veces un mensaje tuyo alcanza para mejorar el día.</p>
+
+<button onclick="nextPage()">Seguir</button>
+
+</div>
+
+<div class="page">
+
+<h1>Un plan simple</h1>
+
+<p>Un paseo.</p>
+<p>Reírnos.</p>
+<p>Despejarnos un rato.</p>
+
+<button onclick="nextPage()">Seguir</button>
+
+</div>
+
+<div class="page">
+
+<h1>La pregunta importante</h1>
+
+<p>¿Te gustaría salir conmigo algún día?</p>
+
+<div class="buttons">
+
+<button onclick="sayYes()">Sí ❤️</button>
+
+<button id="noBtn" onmouseover="moveButton()" onclick="moveButton()">No 😅</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
